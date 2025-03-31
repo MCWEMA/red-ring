@@ -1,0 +1,144 @@
+---
+title: مرحبا بكم بضياء نجم
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: تهنئة لك على تكملة مشروع ضياء نجم جديد
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: مثال مرشد
+      link: /ar/guides/example/
+      icon: right-arrow
+    - text:  اقرء سطارلايت مدول
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+
+tableOfContents:
+  minHeadingLevel: 2
+  maxHeadingLevel: 2
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+![An illustration of planets and stars featuring the word “astro”](https://raw.githubusercontent.com/withastro/docs/main/public/default-og-image.png)
+
+
+
+You can [link to another page](/getting-started/).
+
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+:::note
+Starlight is a documentation website toolkit built with [Astro](https://astro.build/). You can get started with this command:
+
+```sh
+npm create astro@latest -- --template starlight
+```
+
+:::
+
+:::tip[Did you know?]
+Astro helps you build faster websites with [“Islands Architecture”](https://docs.astro.build/en/concepts/islands/).
+:::
+
+:::caution
+If you are not sure you want an awesome docs site, think twice before using [Starlight](/).
+:::
+
+:::danger
+Your users may be more productive and find your product easier to use thanks to helpful Starlight features.
+
+- Clear navigation
+- User-configurable colour theme
+- [i18n support](/guides/i18n/)
+
+:::
+
+
+> This is a blockquote, which is commonly used when quoting another person or document.
+>
+> Blockquotes are indicated by a `>` at the start of each line.
+
+
+```js {2, 4}
+function demo() {
+  // This line (#2) and the next one are highlighted
+  return 'This is line #3 of this snippet';
+  return 'This is line #4 of this snippet';
+  // This line (#5) and the next one are highlighted
+}
+```
+
+```js "Individual terms" /Even.*supported/
+// Individual terms can be highlighted, too
+function demo() {
+  return 'Even regular expressions are supported';
+}
+```
+
+## Next steps
+
+```bash title="Installing dependencies…"
+npm install
+```
+
+```bash {% title="Installing dependencies…" %}
+	npm install
+```
+```bash {% title="Installing dependencies…" %}
+npm install
+```
+
+```bash frame="none"
+echo "This is not rendered as a terminal despite using the bash language"
+```
+
+```bash {% frame="none" %}
+echo "This is not rendered as a terminal despite using the bash language"
+```
+
+```js "return true;" ins="inserted text" del="deleted text"
+function demo() {
+  console.log('These are inserted text and deleted text marker types');
+  // The return statement uses the default marker type
+  return true;
+}
+```
+
+```diff lang="js"
+  function thisIsJavaScript() {
+    // This entire block gets highlighted as JavaScript,
+-   // and we can still add diff markers to it!
+-   console.log('Old code to be removed')
++   console.log('New and shiny code!')
+  }
+```
+
+```js
+// my-test-file.js
+console.log('Hello World!');
+```
+
+<details>
+<summary>Where and when is the Andromeda constellation most visible?</summary>
+
+The [Andromeda constellation](<https://en.wikipedia.org/wiki/Andromeda_(constellation)>) is most visible in the night sky during the month of November at latitudes between `+90°` and `−40°`.
+
+</details>
+
+<CardGrid stagger>
+	<Card title="Update content" icon="pencil">
+		Edit `src/content/docs/index.mdx` to see this page change.
+	</Card>
+	<Card title="Add new content" icon="add-document">
+		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	</Card>
+	<Card title="Configure your site" icon="setting">
+		Edit your `sidebar` and other config in `astro.config.mjs`.
+	</Card>
+	<Card title="Read the docs" icon="open-book">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	</Card>
+</CardGrid>
